@@ -10,7 +10,7 @@
  * @link https://github.com/shuiguang/FormHash
  * @license http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Shuiguang\FormHash;
+namespace Shuiguang;
 /**
  * php实现不使用存储介质实现表单来源校验以防御CSRF攻击, 参见php函数: crypt
  * FormHash校验类的主要功能是在用户的form表单的hidden input中生成一个动态的校验码，用户提交表单后在处理表单的程序中自动完成校验并判断是不是由本站的表单提交，从而防御CSRF攻击。
