@@ -4,7 +4,16 @@ php FormHash for CSRF defense
 
 参考discuz各个版本的formhash()函数，并结合crypt函数的原理实现不需要存储介质的formhash。
 
-## 原理：
+## 安装
+-------
+
+To install with composer:
+
+```sh
+composer require shuiguang/form-hash
+```
+
+## 原理
 ```php
 <?php
 $user_input =  '12+#?345';
@@ -22,3 +31,5 @@ FormHash校验类的主要功能是在用户的form表单的hidden input中生�
 discuz在有效期内生成的formhash是固定不变的，这里通过crypt生成的formhash是动态变化的。
 
 注：CSRF防御仅针对于浏览器提交的表单，对灌水机提取formhash后再次提交表单校验无防御能力。
+
+
