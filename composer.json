@@ -1,5 +1,5 @@
 {
-    "name": "shuiguang/FormHash",
+    "name": "shuiguang/form-hash",
     "description": "php FormHash for CSRF defense",
     "license": "MIT",
     "authors": [
